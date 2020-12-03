@@ -22,7 +22,7 @@ main {
 
 /* create styles for use for all white main boxes */
 .block {
-  background-color: #f8f9fa;
+  background-color:rgba(250,249,245,0.85);
   border-radius: 15px;
   padding: 30px;
   margin-bottom: 30px;
@@ -30,7 +30,7 @@ main {
 
 .block-header {
   /* Typography */
-  color: #fcb30c;
+  color: #587eb8;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
 }
@@ -46,7 +46,7 @@ main {
   padding: 5px;
 
   /* Visual */
-  background: #587eb8;
+  background: #fcb30c;
 }
 
 /* override bootstrap hover color and border */
@@ -74,14 +74,14 @@ main {
   margin-top: 20px;
 }
 
-/* CONNECT W/ ME CSS */
+/* CONNECT W/ ME CSS*/
 .connect-header {
-  /* Typography */
+   /*Typography*/ 
   font-size: 25px;
 }
 
 .connect-photo {
-  /* Box-model */
+  /* Box-model*/
   width: 55px;
   height: 55px;
 }
