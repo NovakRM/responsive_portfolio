@@ -156,6 +156,14 @@ main {
 /* PORTFOLIO PAGE */
 .port-image {
   margin: 20px auto;
+  margin-bottom: 0px;
+}
+
+figcaption{
+  display: block;
+  background-color: #587eb8;
+  color: #FFFFFF;
+  text-align: center;
 }
 /* END PORTFOLIO PAGE */
 
