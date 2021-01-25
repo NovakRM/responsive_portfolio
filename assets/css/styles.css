@@ -68,9 +68,18 @@ main {
 /* END NAV */
 
 /*social media links*/
+.soclinks{
+  align-content:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  top:20%;
+}
+
 .socmedia{
-  max-width: 50%;
-  max-height: 50%;
+  max-width: 70%;
+  max-height: 70%;
+  margin-top: 20px;
   margin-top: 20px;
 }
 
