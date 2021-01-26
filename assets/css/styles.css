@@ -108,8 +108,9 @@ main {
 /* BEGIN FOOTER */
 .footer {
   /* Positioning */
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  left 0;
 
   /* Box-model */
   width: 100%;
