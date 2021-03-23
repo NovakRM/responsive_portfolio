@@ -1,133 +1,231 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>Portfolio</title>
-
-  <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <!-- Our own CSS stylesheet -->
-  <link rel="stylesheet" href="assets/css/styles.css" media="screen">
-
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/styles.css" type="text/css" />
+        <title>Portfolio</title>
+        <script src="https://kit.fontawesome.com/d8142eede8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
         <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand" href="index.html" id="logo">M Novak</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
+            <div class="row no-gutters">
+                <div class="col-sm-4 accordion" id="accordion">
+                    <div class="card" style="border-radius:0px;border:0;">
+                        <img src="./Assets/odaigahara.png" style="width:100%;height:auto;">
+                    </div>
+                    <!--start of first section-->
+                    <div class="acc1">
+                        <div class="display-4 text-uppercase">
+                            <a data-toggle="collapse" data-target="#acc1" class="btn rounded-0 text-white border-0 d-flex justify-content-between">
+                                About Me <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>  
+                    <div id="acc1" class="collapse show" data-parent="#accordion">
+                        <div class="d-flex flex-row" style="min-height:20rem;">
+                            <div class="col-sm one">
+                                <div>
+                                    <img src="./Assets/moth-transparent.png" 
+                                    class="p-2 rounded-circle d-block mx-auto mb-2" style="max-height:150px;">
+
+                                    <span class="badge"><b>M NOVAK</b></span>
+                                    <h6><b>WELCOME!</b></h6>
+                                </div>
+                            </div>
+                            <div class="col-sm two">
+                                <p>
+                                    Hi! My name is Monica, people usually just call me Mo.
+                                    An illustrator / graphic designer who likes bugs and bones and ethereal stuff. 
+                                    I think primary colors are COOL.
+                                </p>
+                                <p>
+                                    Recently, I've been learning how to talk to computers, so this space is going to serve as a repository for my more successful attempts at communication. 
+                                    Check out the portfolio tab over there to see some work!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of first section-->
+                    <!--start of second section-->
+                    <div class="acc2">
+                        <div class="display-4 text-uppercase">
+                            <a data-toggle="collapse" data-target="#acc2" class="btn rounded-0 text-white border-0 d-flex justify-content-between">
+                                Get In Touch <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>  
+                    <div id="acc2" class="collapse" data-parent="#accordion">
+                        <div class="d-flex flex-row" style="min-height:20rem;">
+                            <div class="col-sm one">
+                            <!--CHUNK ONE-->
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div>
+                                    <a href="https://github.com/Osteophagy" target="_blank"> <img src="Assets/Icons/github_red.png" class="p-2 d-block mb-2"></a>
+                                </div>
+                                
+                                <div class="left">
+                                    <a href="https://github.com/Osteophagy" target="_blank"><h5>Github</h5></a>
+                                    <p>
+                                        If you want to see more of my projects, this is the best place to check out <i>how</i> what I do works!
+                                    </p>
+                                </div>
+                            </div>
+                            <!--END OF CHUNK ONE-->
+                            <!--CHUNK TWO-->
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div>
+                                    <a href="https://stackoverflow.com/users/14289164/mnovak" target="_blank"> <img src="Assets/Icons/stackover_yellow.png" class="p-2 d-block mb-2"></a>
+                                </div>
+                                
+                                <div class="left">
+                                    <a href="https://stackoverflow.com/users/14289164/mnovak" target="_blank"><h5>StackOverflow</h5></a>
+                                    <p>
+                                        Do coders ever actually see the front page of this website? Or even check out profiles for that matter?
+                                    </p>
+                                </div>
+                            </div>
+                            <!--END OF CHUNK TWO-->
+                            <!--CHUNK THREE-->
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div>
+                                    <a href="https://stackoverflow.com/users/14289164/mnovak" target="_blank"> <img src="Assets/Icons/linkedin_blue.png" class="p-2 d-block mb-2"></a>
+                                </div>
+                                
+                                <div class="left">
+                                    <a href="https://stackoverflow.com/users/14289164/mnovak" target="_blank"><h5>LinkedIn</h5></a>
+                                    <p>
+                                        I'm fairly active on LinkedIn, there's also the rest of my work history hosted there! Connect with meS! :)
+                                    </p>
+                                </div>
+                            </div>
+                            <!--END OF CHUNK THREE-->
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of second section-->
+                </div>
+                <!--NAVBAR-->
+                <div class="col-sm-1 navi">
+                    <ul class="nav flex-sm-column navInner">
+                        <li class="nav-item">
+                        <a class="nav-link active" href="https://www.mnovakart.com/" data-toggle="tooltip" data-placement="right" title="Art Portfolio"><i class="fa fa-moon" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="https://github.com/Osteophagy" data-toggle="tooltip" data-placement="right" title="Github"><i class="fa fa-cloud" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="https://www.twitter.com/osteophagy/" data-toggle="tooltip" data-placement="right" title="Twitter"><i class="fa fa-hand-peace" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="https://www.Instagram.com/osteophagy/" data-toggle="tooltip" data-placement="right" title="Instagram"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="https://open.spotify.com/playlist/0c6BmLZ5jtUX7G19aG3dff?si=8128fe45deb94303" data-toggle="tooltip" data-placement="right" title="Tunes :)"><i class="fa fa-magic" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-sm-6 portfolio">
+                    <div class="row no-gutters">
+                        <div class="col-sm">
+                            <!--CHUNK ONE-->
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div>
+                                   <a href="https://github.com/Osteophagy/Project-2-Arcadia"> <img src="./Assets/Projects/Arcadia.png" class="p-2 d-block mb-2 portImg"></a>
+                                </div>
+                                
+                                <div class="left">
+                                    <a href="https://github.com/Osteophagy/Project-2-Arcadia"><h5>Arcadia</h5></a>
+                                    <p>
+                                        Arcadia is a digital arcade platform featuring a log-in system, two games, 
+                                        the ability to update username and submit an avatar, as well as leaderboards with usernames and avatar images.
+                                        This project was coded in Javascript + JQuery. Follows MVC conventions, with Handlebars as its templating engine. 
+                                        Express is used for our server, and the database is built with MySQL and Sequelize as the ORM. 
+                                    </p>
+                                </div>
+                            </div>
+                            <!--END OF CHUNK ONE-->
+                            <!--CHUNK TWO-->
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div class="left">
+                                    <a href="https://github.com/Osteophagy/Moodtoob-MBranch"><h5>Moodtoob</h5></a>
+                                    <p>
+                                        Users pass our application a selfie, or upload an image from their computer.
+                                        The Face++ API then analyzes the image, determines users mood, and returns a selection of Youtube videos pulled by queries given by the API based on their mood.
+                                        Uses a mix of JQuery and vanilla Javascript for logic and front-end behavior.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <a href="https://github.com/Osteophagy/Moodtoob-MBranch"><img src="./Assets/Projects/moodtoob.png" class="p-2 d-block mb-2 portImg"></a>
+                                </div>
+                            </div>
+                            <!--END OF CHUNK TWO-->
+                            <!--CHUNK THREE-->
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div>
+                                    <a href="https://github.com/Osteophagy/Profile_Generator"> <img src="./Assets/Projects/profileGenerator.png" class="p-2 d-block mb-2 portImg"> </a>
+                                </div>
+
+                                <div class="left">
+                                    <a href="https://github.com/Osteophagy/Profile_Generator"> <h5>Team Profile Generator</h5></a>
+                                    <p>
+                                        CLI-based application that dynamically generates an HTML page containing members of a project team. 
+                                        Coded in Javascript with NPM Inquirer. Vanilla CSS + Flexbox used for the layout.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--END OF CHUNK THREE-->
+                             <!--CHUNK FOUR-->
+                             <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div class="left">
+                                    <a href="https://github.com/Osteophagy/weather_api"><h5>Weather Dash</h5></a>
+                                    <p>
+                                        An application used to check weather in various cities.
+
+                                        Checks daily forecast: day, temp, humidity, UVI
+                                        Generates 5 day forecast: day, temp, humidity
+                                        It will append new results and store the most recent of them locally.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <a href="https://github.com/Osteophagy/weather_api"><img src="./Assets/Projects/WeatherDash.png" class="p-2 d-block mb-2 portImg"></a>
+                                </div>
+                            </div>
+                            <!--END OF CHUNK FOUR-->
+                            <!--CHUNK FIVE-->
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <div>
+                                   <a href="https://github.com/Osteophagy/Readme_Generator"> <img src="./Assets/Projects/readMe.png" class="p-2 d-block mb-2 portImg"></a>
+                                </div>
+
+                                <div class="left">
+                                    <a href="https://github.com/Osteophagy/Readme_Generator"><h5>ReadMe Generator</h5></a>
+                                    <p>
+                                        ReadMe Generator is a simple CLI-based application that assists in generating clean ReadMes.
+                                        Coded with Javascript and also dependant on NPM Inquirer, it uses the package inquirer to template responses into a ReadMe file.
+                                        A personal favorite project for how useful it winds up being! I use it all the time myself.
+                                    </p>
+                                </div>
+                            </div>
+                            <!--END OF CHUNK FIVE-->
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /.container -->
-      </nav>
-      <!-- End of navbar -->
-
-  <!-- Start of container -->
-  <div class="container">
-    <main class="row">
-      <div class="col-md-8">
-        <article class="block">
-          <h1 class="block-header">Portfolio</h1>
-          <hr />
-          <div class="row">
-            <div class="col-sm-6 col-md-12 col-lg-6">
-              <figure>
-              <a href="https://osteophagy.github.io/Workday-Planner/" target="_blank">
-                <img class="img-fluid port-image" src="assets/imgs/workday.png" alt="Screenshot of a scheduling app">
-                <figcaption>Workday Planner</figcaption>
-              </figure>
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-12 col-lg-6">
-              <figure>
-              <a href="https://www.moodtoob.com/" target="_blank">
-                <img class="img-fluid port-image" src="assets/imgs/moodtoob.png" alt="Screenshot of group project, moodtoob">
-                <figcaption>Group Project 1: Moodtoob</figcaption>
-              </figure>
-              </a>
-              </div>
-            </div>
-          <div class="row">
-            <div class="col-sm-6 col-md-12 col-lg-6">
-              <figure>
-              <a href="https://www.mnovakart.com/" target="_blank">
-                <img class="img-fluid port-image" src="assets/imgs/Art_Portfolio.png" alt="Screenshot of portfolio website">
-                <figcaption>Art Portfolio</figcaption>
-              </figure>
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-12 col-lg-6">
-            <figure>
-            <a href="https://toyhou.se/8841583.delaroche" target="_blank">
-              <img class="img-fluid port-image" src="assets/imgs/bootstrappycard.png" alt="Screenshot of a layout">
-              <figcaption>Small collapsible bootstrap/flex layout.</figcaption>
-            </figure>
-            </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-6 col-md-12 col-lg-6">
-              <figure>
-              <a href="https://osteophagy.github.io/weather_api/" target="_blank">
-                <img class="img-fluid port-image" src="assets/imgs/WeatherDash.png" alt="Screenshot of a weather dashboard app">
-                <figcaption>Weather API Dashboard</figcaption>
-              </figure>
-              </a>
-            </div>
-            <div class="col-sm-6 col-md-12 col-lg-6">
-              <figure>
-              <a href="https://osteophagy.github.io/Static_Page/" target="_blank">
-                <img class="img-fluid port-image" src="assets/imgs/Static_Parallax.png" alt="Screenshot of a layout with placeholder text">
-                <figcaption>Static Webpage Design + Parallax</figcaption>
-              </figure>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </main>
-  </div>
-  <!-- End of container -->
-
-  <!-- Start of footer -->
-  <footer class="footer">
-    <div class="two-toned-footer-color"></div>
-    <p class="text-muted text-muted-footer text-center">
-      &copy; Copyright MNovak 2020
-    </p>
-  </footer>
-  <!-- End of footer -->
-
-  <!-- jQuery CDN -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-  <!-- Bootstrap CDN -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-</body>
-
+        <script>
+            $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
 </html>

@@ -1,208 +1,138 @@
-/* --- STYLES FOR ALL PAGES --- */
-body {
-  /* Typography */
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
-  /* Visual */
-  background-image: url("../imgs/WheatBG.jpg");
+body{
+  background:#f4f3ef;
 }
 
-html {
-  /* Positioning */
-  position: relative;
-
-  /* Box-model */
-  min-height: 100%;
+.container{
+  max-width:100%;
+  height: 100vh;
+  position:relative;
+  left:0;
+  top:0;
 }
 
-/* add space for fixed nav */
-main {
-  margin: 80px 0;
+.active{
+  color:#ffffff;
 }
 
-/* create styles for use for all white main boxes */
-.block {
-  background-color:rgba(250,249,245,0.85);
-  border-radius: 15px;
-  padding: 30px;
-  margin-bottom: 30px;
+.active:hover{
+  color:#ffc107;
 }
 
-.block-header {
-  /* Typography */
-  color: #587eb8;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
+.navi{
+  background:#FF6347;
+  height: 100vh;
 }
 
-/* NAV START */
-#logo {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-  /* Typography */
-  font-size: 24px;
-  font-weight: bold;
-  color: rgba(250,249,245,1);
-  padding: 5px;
-
-  /* Visual */
-  background: #fcb30c;
+.navInner{
+  align-content:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  top:25%;
 }
 
-/* override bootstrap hover color and border */
-.navbar-default .navbar-nav > li > a:hover {
-  color: #fcb30c;
+.nav-item{
+  padding:10px 0px
 }
 
-.navbar {
-  background: rgba(250,249,245,1);
-  border: none;
+#accordion{
+  background:#FF6347;
+  height: 100vh;
 }
 
-/* media query for nav background color change */
-@media only screen and (max-width: 767px) {
-  .navbar-header {
-    background-color: #fcb30c;
-  }
+.collapse{
+  height: 300px;
+  overflow-y: scroll;
 }
-/* END NAV */
 
-/*social media links*/
+.badge{
+  color:#FF6347;
+  font-size:25px;
+  letter-spacing:1px;
+}
+
+h6{
+  color:#ffc107;
+  letter-spacing:1px;
+  text-transform: uppercase;
+  font-weight:bold;
+}
+
+h5{
+  color:#FF6347;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+.one{
+  border-radius:0px;
+  border:0;
+  padding:10px;
+  background:#f4f3ef;
+  text-align:center;
+}
+
+.two{
+  border-radius:0px;
+  border:0;
+  padding:10px;
+  background:#f4f3ef;
+  font-size:12px;
+  line-height:20px
+}
+
+.portfolio{
+  border-radius:0px;
+  height: 100vh;
+  width: 100vw;
+  border:0;
+  margin-left: 20px;
+  padding:20px;
+  background:#f4f3ef;
+  overflow-y: auto;
+}
+
+.portImg{
+  max-height:150px;
+  max-width:150px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+ }
+ ::-webkit-scrollbar-thumb {
+  background: #ffc107;
+ }
+ ::-webkit-scrollbar-thumb:hover{
+  background: #FF6347;
+ }
+ ::-webkit-scrollbar-track{
+  background: #ffffff;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+
+.left{
+  font-size:12px;
+  line-height:20px;
+  padding: 15px;
+}
+
 .soclinks{
   align-content:center;
   justify-content:center;
   text-align:center;
   position:relative;
   top:20%;
+  width: 20%;
+  height: auto;
 }
 
-.socmedia{
-  max-width: 70%;
-  max-height: 70%;
-  margin-top: 20px;
-  margin-top: 20px;
+@media only screen and (max-width: 600px) {
+  .navi{
+    height: auto;
+  }
+  #accordion{
+      height: auto;
+  }
 }
-
-/* CONNECT W/ ME CSS*/
-.connect-header {
-   /*Typography*/ 
-  font-size: 25px;
-}
-
-.connect-photo {
-  /* Box-model*/
-  width: 55px;
-  height: 55px;
-}
-
-#images {
-  /* Box-model */
-  padding-top: 15px;
-
-  /* Typography */
-  text-align: center;
-}
-/* END CONNECT W/ ME */
-
-
-/* BEGIN FOOTER */
-.footer {
-  /* Positioning */
-  position: absolute;
-  bottom: 0;
-
-  /* Box-model */
-  width: 100%;
-  height: 60px;
-
-  /* Visual */
-  background-color: rgba(250,249,245,1);
-}
-
-.text-muted-footer {
-  /* Box-model */
-  margin-top: 15px;
-
-  /* Typography */
-  color: rgba(250,249,245,1);
-}
-
-.two-toned-footer-color {
-  /* Box-model */
-  height: 6px;
-  padding-top: 3px;
-
-  /* Visual */
-  background-color: #587eb8;
-}
-/* END FOOTER */
-/* --- END STYLES FOR ALL PAGES --- */
-
-/* --- PAGE-SPECIFIC STYLES --- */
-/* ABOUT-ME PAGE */
-.about-me-header {
-  /* Positioning */
-  margin-bottom: 33px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-
-  /* Typography */
-  font-size: 32px;
-  font-weight: bold;
-  color: #fcb30c;
-}
-
-#about-image {
-  /* Positioning */
-  float: left;
-
-  /* Box-model */
-  width: 200px;
-  margin: 0 20px 10px 0;
-}
-/* END ABOUT-ME PAGE */
-
-
-/* PORTFOLIO PAGE */
-.port-image {
-  margin: 20px auto;
-  margin-bottom: 0px;
-}
-
-figcaption{
-  display: block;
-  background-color: #587eb8;
-  color:  rgba(250,249,245,1);
-  text-align: center;
-}
-/* END PORTFOLIO PAGE */
-
-
-/* CONTACT FORM PAGE  */
-.form-control {
-  /* give input boxes right angles */
-  border-radius: 0;
-
-  /* keep from horizontally resizing text area */
-  min-width: 100%;
-  max-width: 100%;
-}
-
-.submit-btn {
-  /* Box-model */
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: lighter;
-
-  /* Typography */
-  color: rgba(250,249,245,1);
-
-  /* Visual */
-  background-color: #587eb8;
-  border: 0;
-}
-
-.submit-btn:hover {
-  opacity: .7;
-}
-
-/* END CONTACT FORM PAGE */
